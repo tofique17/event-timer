@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Timer</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body> <!--Firstly, a place for added events with their own date , will be added via js-->
+    <section id="addEventsWithDate">
+
+    </section>
+   <!--Second section for form elements and the button for adding-->
+    <section id="createNewEvent">
+      <div class="form-container">
+        <h2>Create new event</h2>
+
+        <label for="title">Title</label><br />
+        <input type="text" id="title" placeholder="Title" /> <br />
+        <label for="description">Description</label><br />
+        <input type="text" id="description" placeholder="Description" />
+        <h3>Choose date for event</h3>
+        <div class="choose-date">
+          <input
+            type="date"
+            id="eventtime"
+            name="eventtime"
+            style="width: 51%"
+          />
+          <input type="time" id="time" name="time" style="width: 33%" />
+        </div>
+        <button id="button">Add event</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

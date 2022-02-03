@@ -1,0 +1,138 @@
+body{
+    margin:0;
+    padding:0;
+    font-size:18px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color:rgb(95, 17, 17);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#description{
+    height: 60px;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+ 
+/* styling right side, in which we will set our inputs and add button
+first , centering the form-container and giving some styling
+*/
+section#createNewEvent{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: rgb(66, 41, 223);
+color:white;
+padding : 5px 5px;
+width: 45vw;
+height: 100%;
+ border : 1px solid black;
+ background-color: rgb(66, 41, 204) ;
+ border-radius: 5px;
+
+}
+
+/* styling form container with some flexbox properties to set our components in a right way*/
+.form-container{
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    width: 80%;
+    height : 97%;
+    background-color: rgb(66, 49, 161);
+    border-radius: 5px;
+}
+
+input{
+    padding: 0;
+    margin-top : 10px;
+    width:100%;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+
+
+label{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+
+
+#button{
+    width: 100%;
+    cursor:pointer;
+    border-radius: 5px;
+    background-color : rgb(81, 68, 151);
+    color: white;
+    margin-bottom: 10px;
+}
+
+/*  date choosing separately have a flexbox design */
+.choose-date{
+    display:flex;
+    justify-content: space-between;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+.choose-date input{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 0.8rem;
+}
+
+/* styling the section in which we will put our events*/
+section#addEventsWithDate{
+    width: 55vw;
+    background-color: rgb(95, 17, 17);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/* styling 2 divs within a common div , firstly common div's design*/
+.eventDateContainer{
+ width: 200px;
+ height: 40px;
+ display: flex;
+ padding:10px;
+}
+
+
+/* our first div will get date*/
+.eventDateContainer .leftSide{
+display:flex;
+justify-content: center;
+align-items: center;
+width: 50%;
+height: 100%;
+background-color: blue;
+color:white;
+}
+
+/* second div will take title from input*/
+.eventDateContainer .rightSide{
+display:flex;
+justify-content: center;
+align-items: center;
+width: 50%;
+height:100%;
+background-color: white;
+}
+
+
